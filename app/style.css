@@ -1,0 +1,377 @@
+.pyq-rebuild-hidden {
+  display: none !important;
+}
+
+.pyq-rebuild-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 20000;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.pyq-rebuild-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+}
+
+.pyq-rebuild-dialog {
+  position: relative;
+  margin: 24px auto;
+  width: min(1080px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.24);
+  border: 1px solid #dbe4f0;
+}
+
+.pyq-rebuild-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #0f766e 0%, #0f766e 30%, #155eef 100%);
+  color: #ffffff;
+}
+
+.pyq-rebuild-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pyq-rebuild-title h2,
+.pyq-rebuild-title p {
+  margin: 0;
+}
+
+.pyq-rebuild-title h2 {
+  font-size: 20px;
+}
+
+.pyq-rebuild-title p {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.pyq-rebuild-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pyq-rebuild-close {
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.pyq-rebuild-body {
+  display: flex;
+  min-height: 680px;
+  max-height: calc(100vh - 120px);
+}
+
+.pyq-rebuild-nav {
+  width: 180px;
+  padding: 14px;
+  background: #f5f7fb;
+  border-right: 1px solid #e2e8f0;
+  overflow-y: auto;
+}
+
+.pyq-rebuild-nav button {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #334155;
+  text-align: left;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.pyq-rebuild-nav button.active {
+  background: linear-gradient(135deg, #155eef 0%, #0f766e 100%);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(21, 94, 239, 0.22);
+}
+
+.pyq-rebuild-content {
+  flex: 1;
+  padding: 18px;
+  background: #ffffff;
+  overflow-y: auto;
+}
+
+.pyq-rebuild-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+.pyq-rebuild-card + .pyq-rebuild-card {
+  margin-top: 16px;
+}
+
+.pyq-rebuild-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.pyq-rebuild-card-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.pyq-rebuild-status {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #e6fffb;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pyq-rebuild-card-body {
+  padding: 18px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.pyq-rebuild-note {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e3a8a;
+}
+
+.pyq-rebuild-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 14px;
+}
+
+.pyq-rebuild-feature {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.pyq-rebuild-feature h4 {
+  margin: 0 0 10px;
+  color: #0f172a;
+  font-size: 14px;
+}
+
+.pyq-rebuild-feature p,
+.pyq-rebuild-feature ul {
+  margin: 0;
+}
+
+.pyq-rebuild-feature ul {
+  padding-left: 18px;
+}
+
+.pyq-rebuild-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.pyq-rebuild-field {
+  display: grid;
+  gap: 6px;
+}
+
+.pyq-rebuild-field span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.pyq-rebuild-field input,
+.pyq-rebuild-field select,
+.pyq-rebuild-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0f172a;
+  font: inherit;
+}
+
+.pyq-rebuild-field textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.pyq-rebuild-sequence-item textarea {
+  margin-top: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d7deea;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+  resize: vertical;
+  min-height: 88px;
+}
+
+.pyq-rebuild-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pyq-rebuild-actions button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #155eef;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.pyq-rebuild-actions button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.pyq-rebuild-sequence-list {
+  display: grid;
+  gap: 8px;
+}
+
+.pyq-rebuild-sequence-item {
+  padding: 12px 14px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #334155;
+}
+
+.pyq-rebuild-html-preview {
+  min-height: 260px;
+  padding: 14px;
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  background: #ffffff;
+  overflow: auto;
+}
+
+.pyq-rebuild-fullscreen {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 21000;
+}
+
+.pyq-rebuild-fullscreen-card {
+  width: min(960px, calc(100vw - 24px));
+  max-height: calc(100vh - 24px);
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: auto;
+  padding: 18px;
+  position: relative;
+}
+
+.pyq-rebuild-fullscreen-card > button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  background: #e2e8f0;
+  cursor: pointer;
+}
+
+.pyq-rebuild-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #0f172a;
+}
+
+.pyq-rebuild-debug {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.pyq-rebuild-debug p,
+.pyq-rebuild-debug ul {
+  margin: 0;
+}
+
+.pyq-rebuild-debug ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 860px) {
+  .pyq-rebuild-dialog {
+    width: calc(100vw - 20px);
+    margin: 10px auto;
+    max-height: calc(100vh - 20px);
+  }
+
+  .pyq-rebuild-body {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .pyq-rebuild-nav {
+    width: auto;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .pyq-rebuild-nav button {
+    min-width: 110px;
+    margin-bottom: 0;
+  }
+}
